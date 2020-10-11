@@ -1,0 +1,12 @@
+/* body */
+
+body {
+    background: #efefef;
+    font-family: sans-serif;
+}
+
+.projectUpload .heading {
+    text-align: center;
+    font-size: 20px;
+    color: #808080;
+}

@@ -1,0 +1,624 @@
+/* 
+    Name: Ogundele Yusuf Oyindamola
+    Profession: Web Developer
+    Project: Personal Portfolio Website
+    Date: 10-6-2020
+*/
+
+/* Universal Selector */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* body styles */
+body {
+    background: #efefef;
+    font-family: sans-serif;
+}
+
+/* nav styles */
+.nav {
+    display: block;
+    width: 100%;
+    background: #111111;
+}
+
+/* nav's stickiness */
+.sticky {
+    box-shadow: 0 0 10px #131313;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    top: 0;
+}
+
+.container {
+    position: relative;
+}
+
+.logo {
+    float: left;
+    padding: 5px;
+    color: #b41c1c;
+    width: 50px;
+}
+
+.navbar {
+    float: right;
+}
+
+.navbar a {
+    display: block;
+    padding: 15px;
+    font-weight: 700;
+    float: left;
+    font-size: 13px;
+    color: #525252;
+}
+
+.navbar a:hover {
+    color: #757575;
+    animation-name: navLink;
+    animation-duration: 0.5s;
+}
+
+@keyframes navLink {
+    from {
+        color: #525252;
+    }
+
+    to {
+        color: #757575;
+    }
+}
+
+/* Header Styles */
+.header {
+    display: inline-block;
+    margin-top: 0;
+    width: 100%;
+    color: #808080;
+    height: 620px;
+    background: #222020;
+}
+
+.header .info {
+    margin-top: 120px;
+}
+
+.header .info h2 {
+    font-size: 30px;
+}
+
+.header .row {
+    margin-top: 0px;
+    grid-row-gap: 0;
+    grid-column-gap: 0;
+}
+
+.header .styled {
+    color: #ca0000;
+}
+
+.header .mini {
+    font-size: x-small;
+    font-weight: 100;
+    color: #525252;
+}
+
+.contactMe {
+    font-weight: 700;
+    border-radius: 10px;
+    padding: 10px;
+    display: block;
+    color: #ca0000;
+    font-size: 11px;
+    border: 1px solid #ca0000;
+    width: 75px;
+    margin-top: 30px;
+    background: none;
+}
+
+.contactMe:hover {
+    animation-name: contactMe;
+    animation-duration: 0.5s;
+    background: #ca0000;
+    color: #efefef;
+}
+
+@keyframes contactMe {
+    from {
+        background: none;
+        color: #ca0000;
+    }
+
+    to {
+        background: #ca0000;
+        color: #efefef;
+    }
+}
+
+.header .img {
+    width: 80%;
+    height: 100%;
+    margin: auto;
+}
+
+.header img {
+    width: 100%;
+    height: 100%;
+}
+
+/* about me styles */
+.about {
+    padding-top: 100px;
+    width: 100%;
+    height: 620px;
+    background: #222020;
+    display: inline-block;
+}
+
+.about .heading {
+    font-size: 100px;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-left: 5%;
+    color: #363636;
+}
+
+.about .aboutInfo {
+    width: 70%;
+    height: 200px;
+    margin: -40px 15%;
+    position: absolute;
+    background: #222020;
+    box-shadow: 0 0 15px #111111;
+    display: inline-block;
+}
+
+.about .aboutInfo .details {
+    width: 90%;
+    margin: 20px auto;
+    color: #808080;
+}
+
+.about .bottomDesign {
+    width: 100px;
+    height: 100px;
+    float: right;
+    background: url(../img/c_design.png);
+    background-repeat: no-repeat;
+    margin-right: 5%;
+    margin-top: 100px;
+}
+
+/* Skills styles */
+.skills {
+    padding-top: 70px;
+    width: 100%;
+    height: 620px;
+    background: #222020;
+    display: inline-block;
+}
+
+.stretch {
+    width: 100%;
+}
+
+.skills .heading {
+    font-size: 100px;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-left: 5%;
+    color: #363636;
+    float: right;
+    margin-right: 2%;
+}
+
+/* skills progress */
+.skills-progress {
+    margin: 20px auto;
+    width: 90%;
+}
+
+.progressOutline {
+    width: 100%;
+    margin: 10px auto;
+    border: 2px solid #2e2eff;
+    padding: 1px;
+    border-radius: 20px;
+}
+
+.progressInfo {
+    width: 90%;
+    margin: 10px auto;
+}
+
+.progressInfo p {
+    color: #757575;
+}
+
+.progress {
+    width: 0;
+    background: #2e2eff;
+    height: 7px;
+    border-radius: 20px;
+    transition: width 2s;
+}
+
+
+/* works styles */
+.works {
+    padding-top: 70px;
+    width: 100%;
+    height: auto;
+    padding-bottom: 200px;
+    background: #222020;
+    display: inline-block;
+}
+
+.works .heading {
+    font-size: 100px;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-left: 5%;
+    color: #363636;
+}
+
+.works .info {
+    background: #0c0c69;
+    font-weight: 700;
+    padding: 5px;
+    text-align: center;
+    color: #b1b1b1;
+    width: 90%;
+    margin: 20px auto;
+    border-radius: 5px;
+}
+
+.works .col-4 {
+    border: 1px solid #b41c1c;
+    padding: 5px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.worksDiv img {
+    width: 100%;
+    height: 100%;
+}
+
+.work-name p{
+    color: #757575;
+    text-align: center;
+    background: #b41c1c;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.techs .head {
+    font-size: 14px;
+    padding: 10px 0;
+    color: #b1b1b1;
+    text-align: center;
+}
+
+.techs .tech-list {
+    height: 85px;
+    text-align: center;
+}
+
+.techs .tech-list span {
+    padding: 5px;
+    margin-right: 5px;
+    border-radius: 5px;
+    color: #b1b1b1;
+    font-size: 12px;
+}
+
+.techs .tech-list .html-color {
+    background: #d62525;
+}
+
+.techs .tech-list .css-color {
+    background: #3838b3;
+}
+
+.techs .tech-list .js-color {
+    background: #6b6b00;
+}
+
+.techs .tech-list .bts-color {
+    background: #740074;
+}
+
+/* contact section styles */
+.contact {
+    padding-top: 70px;
+    padding-bottom: 50px;
+    width: 100%;
+    height: 620px;
+    background: #222020;
+    display: inline-block;
+}
+
+.contact-details {
+    width: 100%;
+    padding-top: 140px;
+}
+
+/* Whatsapp submission form and styles */
+.whatsapp-msg {
+    width: 70%;
+    margin: auto;
+}
+
+.whatsapp-msg div {
+    margin-bottom: 15px;
+}
+
+.whatsapp-msg label {
+    text-align: center;
+    display: block;
+    padding-bottom: 5px;
+    color: #382e72;
+}
+
+.whatsapp-msg input, .whatsapp-msg textarea {
+    width: 80%;
+    margin: auto;
+    display: block;
+    color: #b1b1b1;
+}
+
+.whatsapp-msg input {
+    padding: 10px;
+    border-radius: 15px;
+    border: 2px solid #023f00;
+    background: none;
+}
+
+.sendMsg {
+    padding: 10px;
+    background: #023f00;
+    color: #b1b1b1;
+    font-size: 15px;
+    border-radius: 15px;
+    text-align: center;
+    margin: auto;
+    width: 80%;
+    display: block;
+}
+
+.sendMsg:hover {
+    animation-name: sendMsg;
+    cursor: pointer;
+    transform: scale(1.06);
+    animation-duration: 0.25s;
+}
+
+@keyframes sendMsg {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.06);
+    }
+}
+
+.whatsapp-msg input[type = "submit"] {
+    background: #023f00;
+    color: #b1b1b1;
+}
+
+.whatsapp-msg textarea {
+    background: none;
+    padding: 10px;
+    border-radius: 15px;
+    border: 2px solid #023f00;
+}
+
+.media-icons {
+    width: 60%;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.media-icons span.fa {
+    padding: 10px;
+    font-size: 20px;
+    color: #343449;
+}
+
+.contact .heading {
+    font-size: 100px;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-left: 5%;
+    color: #363636;
+    float: right;
+    margin-right: 2%;
+}
+
+.contact-icon {
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.contact-icon .fa-phone:hover {
+    color: #efefef;
+    background: #1414b4;
+    animation-name: contactIcon;
+    animation-duration: 0.5s;
+    transform: scale(1.1);
+}
+
+@keyframes contactIcon {
+    from {
+        background: #0c0c69;
+        color: #757575;
+        transform: scale(1);
+    }
+    to {
+        background: #1414b4;
+        color: #efefef;
+        transform: scale(1.1);
+    }
+}
+
+.contact-icon .fa-phone {
+    color: #757575;
+    background: #0c0c69;
+    padding: 15px;
+    border-radius: 50%;
+    font-size: 20px;
+    box-shadow: 1px 1px 10px #000;
+}
+
+/* Mobile Responsiveness */
+
+/* Damson's image responsiveness */
+@media screen and (max-width: 800px) {
+    .header .img {
+        width: 100%;
+        height: 100%;
+        margin: auto;
+    }
+
+    /* work section */
+    .work-name p {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    /* about section */
+    .about .heading {
+        font-size: 60px;
+        font-weight: 700;
+        margin-top: 20px;
+        margin-left: 5%;
+        color: #363636;
+    }
+    .about .aboutInfo {
+        width: 70%;
+        height: 200px;
+        margin: -25px 15%;
+        position: absolute;
+        background: #222020;
+        box-shadow: 0 0 15px #111111;
+        display: inline-block;
+    }
+
+    /* skills section */
+    .skills .heading {
+        font-size: 60px;
+    }
+
+    /* works section */
+    .works .heading {
+        font-size: 60px;
+    }
+
+    /* contact section */
+    .contact .heading {
+        font-size: 60px;
+    }
+
+}
+
+@media screen and (max-width: 575.75px) {
+    .header .img {
+        width: 80%;
+        height: 100%;
+        margin: auto;
+    }
+
+    /* about section */
+    .about .details {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    /* adjusting the navigation for smooth responsivess */
+    .navbar {
+        width: 100%;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+    }
+    .navbar a {
+        padding: 18px;
+        font-size: 10px;
+    }
+    .logo {
+        width: 50px;
+        padding-top: 10px;
+        margin: auto;
+    }
+
+    /* header styles */
+    .header .info h2 {
+        font-size: 20px;
+    }
+
+    .contactMe {
+        padding: 7px;
+        border-radius: 5px;
+    }
+
+    .contact-icon .fa-phone {
+        font-size: 15px;
+        padding: 13px;
+    }
+
+    .media-icons {
+        width: 80%;
+    }
+
+    .media-icons span.fa {
+        font-size: 15px;
+    }
+
+    /* about section */
+    .about .details {
+        font-size: 12px;
+    }
+
+    /* work */
+    .works .info {
+        font-size: 13px;
+    }
+
+    /* contact */
+    .sendMsg {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 260px) {
+    /* navbar */
+    .navbar {
+        overflow: auto;
+    }
+    .navbar a {
+        font-size: 7px;
+        font-weight: 1000;
+    }
+
+    /* Contact Styles */
+    .media-icons span.fa {
+        font-size: 11px;
+    }
+}
+
+@media screen and (max-width: 250px) {
+    /* about section */
+    .about .details {
+        font-size: 10px;
+    }
+}
